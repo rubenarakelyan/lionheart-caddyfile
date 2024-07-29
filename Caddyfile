@@ -25,3 +25,12 @@ tools.rubenarakelyan.com {
 www.rubenarakelyan.com {
   reverse_proxy localhost:4001
 }
+
+joannaandruben.uk {
+  redir https://www.{host}{uri}
+}
+
+www.joannaandruben.uk {
+  root * /srv/wedding
+  file_server
+}
