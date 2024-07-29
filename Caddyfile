@@ -2,6 +2,18 @@ wackomenace.co.uk {
   redir https://www.{host}{uri}
 }
 
+cleanmail.wackomenace.co.uk {
+  redir https://tools.wackomenace.co.uk/cleanmail
+}
+
+gm.wackomenace.co.uk {
+  redir https://tools.wackomenace.co.uk/gm
+}
+
+vcardmaker.wackomenace.co.uk {
+  redir https://github.com/rubenarakelyan/vcardmaker
+}
+
 sso.wackomenace.co.uk {
   reverse_proxy localhost:4002
 }
