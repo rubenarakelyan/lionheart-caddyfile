@@ -1,0 +1,27 @@
+wackomenace.co.uk {
+  redir https://www.{host}{uri}
+}
+
+sso.wackomenace.co.uk {
+  reverse_proxy localhost:4002
+}
+
+tools.wackomenace.co.uk {
+  reverse_proxy localhost:4003
+}
+
+www.wackomenace.co.uk {
+  reverse_proxy localhost:4000
+}
+
+rubenarakelyan.com {
+  redir https://www.{host}{uri}
+}
+
+tools.rubenarakelyan.com {
+  redir https://tools.wackomenace.co.uk{uri}
+}
+
+www.rubenarakelyan.com {
+  reverse_proxy localhost:4001
+}
