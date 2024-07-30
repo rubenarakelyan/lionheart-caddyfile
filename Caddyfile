@@ -44,7 +44,11 @@ www.wackomenace.co.uk {
 }
 
 monica.wackomenace.co.uk {
-  php_fastcgi localhost:9000
+  root * /srv/monica.wackomenace.co.uk/public
+  php_fastcgi localhost:9000 {
+    root /var/www/html/public
+  }
+  file_server
 }
 
 webmail.wackomenace.co.uk {
