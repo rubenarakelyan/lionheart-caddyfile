@@ -43,6 +43,10 @@ www.wackomenace.co.uk {
   reverse_proxy localhost:4000
 }
 
+monica.wackomenace.co.uk {
+  reverse_proxy localhost:9000
+}
+
 rubenarakelyan.com {
   redir https://www.{host}{uri}
 }
