@@ -47,6 +47,10 @@ monica.wackomenace.co.uk {
   reverse_proxy localhost:9000
 }
 
+webmail.wackomenace.co.uk {
+  redir https://fearless.ra.pn/mail
+}
+
 rubenarakelyan.com {
   redir https://www.{host}{uri}
 }
