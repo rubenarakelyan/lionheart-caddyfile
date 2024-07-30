@@ -44,7 +44,7 @@ www.wackomenace.co.uk {
 }
 
 monica.wackomenace.co.uk {
-  reverse_proxy localhost:9000
+  php_fastcgi localhost:9000
 }
 
 webmail.wackomenace.co.uk {
