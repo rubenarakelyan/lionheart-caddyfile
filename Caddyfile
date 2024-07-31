@@ -45,6 +45,9 @@ www.wackomenace.co.uk {
 
 git.wackomenace.co.uk {
   reverse_proxy localhost:3000
+  log {
+    output file /var/log/caddy/git.wackomenace.co.uk.log
+  }
 }
 
 monica.wackomenace.co.uk {
@@ -53,6 +56,9 @@ monica.wackomenace.co.uk {
     root /var/www/html/public
   }
   file_server
+  log {
+    output file /var/log/caddy/monica.wackomenace.co.uk.log
+  }
 }
 
 webmail.wackomenace.co.uk {
