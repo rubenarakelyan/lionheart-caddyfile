@@ -43,6 +43,10 @@ www.wackomenace.co.uk {
   reverse_proxy localhost:4000
 }
 
+git.wackomenace.co.uk {
+  reverse_proxy localhost:3000
+}
+
 monica.wackomenace.co.uk {
   root * /srv/monica.wackomenace.co.uk/public
   php_fastcgi localhost:9000 {
